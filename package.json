@@ -7,10 +7,13 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.527",
+    "@remotion/google-fonts": "4.0.527",
+    "@remotion/media": "4.0.527",
+    "@remotion/tailwind-v4": "4.0.527",
+    "@remotion/transitions": "4.0.527",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.527",
-    "@remotion/tailwind-v4": "4.0.527",
     "tailwindcss": "4.0.0"
   },
   "devDependencies": {
@@ -25,7 +28,9 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "render": "remotion render Adrenaline out/adrenaline-voice.mp4 && ffmpeg -y -loglevel error -i out/adrenaline-voice.mp4 -c:v copy -af alimiter=limit=0.79:attack=5:release=50:level=false -c:a aac -b:a 256k out/adrenaline-final.mp4",
+    "normalize-audio": "bash normalize-audio.sh"
   },
   "sideEffects": [
     "*.css"

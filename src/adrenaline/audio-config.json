@@ -1,0 +1,29 @@
+{
+  "music": "norm/music/bg.wav",
+  "voiceover": [
+    {
+      "file": "norm/voice/scene-1.wav",
+      "frames": 161
+    },
+    {
+      "file": "norm/voice/scene-2.wav",
+      "frames": 228
+    },
+    {
+      "file": "norm/voice/scene-3.wav",
+      "frames": 240
+    },
+    {
+      "file": "norm/voice/scene-4.wav",
+      "frames": 346
+    },
+    {
+      "file": "norm/voice/scene-5.wav",
+      "frames": 238
+    },
+    {
+      "file": "norm/voice/scene-6.wav",
+      "frames": 307
+    }
+  ]
+}
